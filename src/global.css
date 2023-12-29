@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-slate-100
+}
+
+.App {
+    @apply font-body
+}
+
+/* navbar */
+
+.nav-bar {
+    @apply flex items-end pb-3 bg-slate-100 shadow-md
+}
+
+.nav-bar h2 {
+    @apply text-primary-100 text-4xl font-semibold px-10 pt-2
+}
+
+.nav-bar a {
+    @apply text-xl hover:text-primary-200
+}
+
+/* nav bar */
+/* content */
+
+.content {
+    @apply px-20 pt-7
+}
+
+.title {
+    @apply text-2xl font-semibold pb-2
+}
+
+button {
+    @apply text-lg mt-5 bg-slate-300 px-2 py-1 rounded-xl hover:text-slate-100 hover:bg-primary-200 shadow-inner hover:shadow-md
+}
+
+.loading-message,.fetch-error {
+    @apply text-3xl font-light
+}
+
+/* content */
+/* blog-list */
+
+.blog-preview {
+    @apply py-2 px-2 hover:text-secondary-200 hover:shadow
+}
+
+.blog-list .blog-preview h2 {
+    @apply text-lg font-semibold
+}
+
+.preview-body {
+    @apply opacity-50
+}
+
+.preview-author {
+    @apply font-light
+}
+
+/* blog-list */
+/* create */
+
+.create form {
+    @apply w-full px-20 pt-5
+}
+
+.create form label {
+    @apply block text-lg font-semibold
+}
+
+.create input {
+    @apply w-7/12 bg-slate-100 border-b-2 focus:outline-none focus:bg-slate-200 focus:border-primary-100
+}
+
+.create textarea {
+    @apply size-full bg-slate-100 border-b-2 focus:outline-none focus:bg-slate-200 focus:border-primary-100 resize-none
+}
+
+.create select {
+    @apply block my-2 w-1/4 focus:border-primary-100
+}
+
+/* create */
+/* blog-details */
+
+.blog-details .author {
+    @apply text-lg
+}
+.blog-details .body {
+    @apply mt-3 block
+}
+
+/* blog-details */
+/* not-found */
+
+.not-found {
+    @apply text-center mt-10
+}
+
+.not-found h2 {
+    @apply text-5xl font-semibold tracking-wide
+}
+
+.not-found p {
+    @apply text-lg mt-4
+}
+
+.not-found a {
+    @apply mt-2 border-b-2 border-slate-800
+}
+
+/* not-found */

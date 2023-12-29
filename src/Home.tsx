@@ -11,8 +11,8 @@ const Home = () => {
 
   return (
     <div className="home">
-      {error && <div>{error}</div>}
-      {isPending && <div>Loading ...</div>}
+      {error && <div className="fetch-error">{error}</div>}
+      {isPending && <div className="loading-message">Loading ...</div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs" />}
     </div>
   );

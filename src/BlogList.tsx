@@ -9,12 +9,13 @@ interface Props {
 const BlogList = ({ blogs, title }: Props) => {
   return (
     <div className="blog-list">
-      <h2>{title}</h2>
+      <h2 className="title">{title}</h2>
       {blogs.map((blog: any) => (
         <div className="blog-preview" key={blog.id}>
           <Link to={`/blogs/${blog.id}`}>
             <h2>{blog.title}</h2>
-            <p>Written by {blog.author}</p>
+            <p className="preview-body">{blog.body.slice(0, 300)}</p>
+            <p className="preview-author">Written by {blog.author}</p>
           </Link>
         </div>
       ))}

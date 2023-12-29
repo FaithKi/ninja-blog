@@ -22,14 +22,14 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
-      {isPending && <div>Loading...</div>}
-      {error && <div>{error}</div>}
+      {isPending && <div className="loading-message">Loading...</div>}
+      {error && <div className="fetch-error">{error}</div>}
       {blog && (
         <article>
-          <h2>{blog["title"]}</h2>
-          <p>Written by {blog["author"]}</p>
-          <div>{blog["body"]}</div>
-          <button onClick={handleClick}>delete blog</button>
+          <h2 className="title">{blog["title"]}</h2>
+          <p className="author">Written by {blog["author"]}</p>
+          <div className="body">{blog["body"]}</div>
+          <button onClick={handleClick}>Delete Blog</button>
         </article>
       )}
     </div>
